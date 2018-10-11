@@ -1,0 +1,107 @@
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+
+/* Eric Meyer CSS Reset Begins */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* Eric Meyer CSS Reset Ends */
+
+/* desktop styling */
+
+/* default styling */
+body{
+  font-family: 'Helvetica Neue',sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+/* text styling */
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 250%;
+  margin: 0;
+}
+
+h2{
+  font-size: 100%;
+  font-weight: 200;
+}
+
+/* link styling */
+
+/* remove the underline for all links, make font black */
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* make links in nav uppercase */
+nav a{
+  text-transform: uppercase;
+}
+
+/* style the hover of links in nav*/
+nav li:hover{
+  border-bottom: solid 2px #D6EAD2;
+  transition: all 0.8s ease;
+}
+
+/*  footer styling */
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p{
+  text-align: center;
+  font-size: 60%;
+  color: lightgrey;
+  padding-bottom: 10px;
+}
+
+
+/* home page */
+
+/* apply flexbox on container, make list items centred */
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+/* apply spacing on the nav items, less on the bottom */
+nav li{
+  padding: 20px 50px 20px;
+  /* ensures hover won't move other elements */
+  border-bottom: solid 2px transparent;
+}
+
+/* sizing for the logo, make it centred on the page, add spacing above and below */
+.logo{
+  width: 315px;
+  display: block;
+  margin: 0 auto;
+  /* makes position stay in place i want while being responsive */
+  padding-top: 22vh;
+  padding-bottom: 30px;
+}
+
+/* align headings to center */
+h1, h2{
+  text-align: center;
+}
+
+/* styling for my name */
+h1{
+  text-transform: lowercase;
+}
+
+/* make description uppercase */
+h2{
+  text-transform: uppercase;
+}
+
+
+
+
+
+/* mobile styling */
