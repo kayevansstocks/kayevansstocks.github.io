@@ -11,6 +11,7 @@ body{
   font-family: 'Helvetica Neue',sans-serif;
   font-weight: 200;
   font-size: 16px;
+  margin: 0;
 }
 
 /* text styling */
@@ -46,11 +47,6 @@ nav li:hover{
 }
 
 /*  footer styling */
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
 
 footer p{
   text-align: center;
@@ -98,6 +94,13 @@ h1{
 /* make description uppercase */
 h2{
   text-transform: uppercase;
+}
+
+/* footer styling */
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 
