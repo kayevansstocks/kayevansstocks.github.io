@@ -10,20 +10,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 body{
   font-family: 'Helvetica Neue',sans-serif;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 1.5;
   margin: 0;
+}
+
+.wrapper{
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 /* text styling */
 h1{
   font-family: 'Playfair Display', serif;
-  font-size: 250%;
+  font-size: 340%;
   margin: 0;
-}
-
-h2{
-  font-size: 100%;
-  font-weight: 200;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 /* link styling */
@@ -34,10 +37,23 @@ a{
   color: black;
 }
 
-
-/* make links in nav uppercase */
+/* make links in nav uppercase, size them */
 nav a{
   text-transform: uppercase;
+  font-size: 120%;
+}
+
+/* apply flexbox on container, make list items centred */
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+/* apply spacing on the nav items, less on the bottom */
+nav li{
+  padding: 20px 50px 20px;
+  /* ensures hover won't move other elements */
+  border-bottom: solid 2px transparent;
 }
 
 /* style the hover of links in nav*/
@@ -58,19 +74,6 @@ footer p{
 
 /* home page */
 
-/* apply flexbox on container, make list items centred */
-nav ul{
-  display: flex;
-  justify-content: center;
-}
-
-/* apply spacing on the nav items, less on the bottom */
-nav li{
-  padding: 20px 50px 20px;
-  /* ensures hover won't move other elements */
-  border-bottom: solid 2px transparent;
-}
-
 /* sizing for the logo, make it centred on the page, add spacing above and below */
 .logo{
   width: 315px;
@@ -78,32 +81,93 @@ nav li{
   margin: 0 auto;
   /* makes position stay in place i want while being responsive */
   padding-top: 22vh;
-  padding-bottom: 30px;
-}
-
-/* align headings to center */
-h1, h2{
-  text-align: center;
-}
-
-/* styling for my name */
-h1{
-  text-transform: lowercase;
-}
-
-/* make description uppercase */
-h2{
-  text-transform: uppercase;
+  padding-bottom: 20px;
 }
 
 /* footer styling */
-footer{
+footer.home{
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
+/* contact page */
 
+/* add more space around the h1, make font bigger */
+h1.contact{
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-size: 500%;
+}
+
+/* styling the form */
+
+form{
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* puts the elements on top of each other */
+label, input{
+  display: block;
+}
+
+/* width of the input and text areas */
+input,textarea{
+  width: 520px;
+  border: 0.5px solid black;
+}
+
+/* make the text uppercase */
+label, input.button{
+  text-transform: uppercase;
+}
+
+/* adding space around elements*/
+
+label{
+  padding-bottom: 5px;
+}
+
+input#email, input#name{
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+/* add spacing, make larger text area */
+textarea{
+  height: 100px;
+  margin-bottom: 30px;
+  /* limit the area of text to only move vertically */
+  resize: vertical;
+}
+
+/* remove blue outline */
+textarea, input.button:focus{
+  outline: none;
+}
+
+/* style the button */
+input.button{
+  font-family: 'Playfair Display', serif;
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 300%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  width: 180px;
+  padding: 2px;
+  border: none;
+  /* fixes issue of seeing black line before hover */
+  border-bottom: solid 2px transparent;
+}
+
+/* style the hover */
+input.button:hover{
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border-bottom: 2px solid #D6EAD2;
+}
 
 
 
